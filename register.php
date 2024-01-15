@@ -15,7 +15,7 @@ else{
 if($_SERVER["REQUEST_METHOD"] === "POST"){
     $Nom = $_POST['nom'];
     $Nombre = $_POST['nombre'];
-    $sql = "INSERT INTO `birthday` (nom, nombre) VALUE ('$Nom','$Nombre')";
+    $sql = "INSERT INTO `birthday-guests` (nom, nombre) VALUE ('$Nom','$Nombre')";
 
     $connection->query($sql);
 }

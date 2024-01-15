@@ -16,9 +16,6 @@ if($connection->connect_error){
 else{
     echo("no error");
 }
-$query = "INSERT INTO `birthday-guests`(`Nom`,`Nombre`) VALUES ('Pauline',2)";
-$connection->query($query);
-$connection->query("INSERT INTO `birthday-guests`(`Nom`,`Nombre`) VALUES ('Clementine',2)");
 
 if($_SERVER["REQUEST_METHOD"] === "POST"){
     $Nom = $_POST['nom'];
