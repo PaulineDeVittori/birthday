@@ -17,12 +17,13 @@
     
         <div id = lieu>
             <P>Le lieu de la fete sera indique a cette adresse : 
-                <button>Adresse</button>
+                <a href = "https://www.lemans.fr/dynamique/la-proximite/les-salles-municipales/le-descriptif-des-salles-municipales/la-salle-du-jardin-des-plantes/">
+                    Salle du jardin des plantes</a>
             </P>
         </div>
 
         <div id = formulaire>
-            <form method = "post" action = "add_birthday.php">
+            <form method = "post" action = "register.php">
                 <div id = nom>
                     <p>Votre nom :</br>
                         <input type = "nom" id = "nom" name = "nom" placeholder = "Entrer le nom"> 
