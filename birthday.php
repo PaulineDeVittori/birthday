@@ -8,7 +8,6 @@
 
 <body>
         <h1>Birthday</h1>
-    
         <h1>De Vittori Pauline</h1>
         <header>
             <h4>La fete se deroulera le 27 novembre a 19h</h4>
