@@ -2,22 +2,57 @@
 <html lang = "en">
 <head>
     <meta charset = "UFT-8">
-    <title>Super heros</title>
+    <title>Birthday</title>
     <link rel = "stylesheet" href  = "birthday.css">
 </head>
 
 <body>
-    <h1>Super hero</h1>
-        <div>
+        <h1>Birthday</h1>
+    
+        <h1>De Vittori Pauline</h1>
+        <header>
+            <h4>La fete se deroulera le 27 novembre a 19h</h4>
+            <h3>"theme fleurs"</h3>
+        </header>
+    
+        <div id = lieu>
+            <P>Le lieu de la fete sera indique a cette adresse : 
+                <button>Adresse</button>
+            </P>
+        </div>
+
+        <div id = formulaire>
             <form method = "post" action = "add_birthday.php">
-                <h4>Nom : </h4>
-                <input id = "nom" name = "nom" placeholder = "Entrer le nom">               
-                <h4>Nombre : </h4>
-                <input id = "nombre" name = "nombre" placeholder = "Entrer le nombre">
-                <input type = "submit" name = "submit" value = "Send">
+                <div id = nom>
+                    <p>Votre nom :</br>
+                        <input type = "nom" id = "nom" name = "nom" placeholder = "Entrer le nom"> 
+                    </p>
+                </div>
+
+                <div id = nombre>
+                    <p>Combien de personnes vous accompagnent ?</br>
+                        <input type = "nombre" id = "nombre" name = "nombre" placeholder = "Entrer le nombre">
+                    </p>
+                </div>
+
+                <div id = boutonsubmit>
+                    <button type = "submit" id = submit>Submit</button>    
+                </div>
             </form>
         </div>
-    <?php include "display-birthday.php";?>
+
+
+        <footer>
+            <button id = ensavoirplus onclick = "displayExplanations()">En savoir plus</button>
+            <p id = infos>Le theme de la fete est les fleurs, chacun peut venir avec des vetements</br>
+            aux motifs fleuris ou bien simplement avec une fleur à la main ou en broche sur une veste</br>
+            n'heistez pas a apporter un bouquet fleuri a ajouter a la decoration de la salle
+        </p>
+        </footer>
+    
+        <script src="birthday.js"></script>
+
+    <?php include "display_birthday.php";?>
 </body>
 
 </html>
