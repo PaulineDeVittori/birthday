@@ -18,15 +18,31 @@
                 <button>Adresse</button>
             </P>
         </div>
-    
-        <div id = invite>
-            <p>Dites moi si vous venez seul ou avec quelqu'un :</br>
-                <input> </input>
-            </p>
+        
+        <div id = formulaire>
+            <div id = nom>
+                <p>Votre nom :</br>
+                    <input>  </input>
+                </p>
+            </div>
+
+            <div id = nombre>
+                <p>Combien de personnes vous accompagnent ?</br>
+                    <input>  </input>
+                </p>
+            </div>
+
+            <div id = boutonsubmit>
+                <button id = submit>Submit</button>    
+            </div>
         </div>
-    
-        <footer >
-            <button id = ensavoirplus>En savoir plus</button>
+
+        <footer>
+            <button id = ensavoirplus onclick = "displayExplanations()">En savoir plus</button>
+            <p id = infos>Le theme de la fete est les fleurs, chacun peut venir avec des vetements</br>
+            aux motifs fleuris ou bien simplement avec une fleur à la main ou en broche sur une veste</br>
+            n'heistez pas a apporter un bouquet fleuri a ajouter a la decoration de la salle
+        </p>
         </footer>
     
         <script src="birthday.js"></script>
